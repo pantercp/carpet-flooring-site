@@ -37,10 +37,12 @@ span{
 .container-nav{
     display: flex;
     justify-content: space-between;
+    top: 0;
+    z-index: 3;
     align-items: center;
     padding: 20px;
     height: 13vh;
-    background-image: url(images/background-1.png);
+    background-image: url(images/banner.png);
 }
 .contain-logo{
     text-align: center;
@@ -121,6 +123,7 @@ span{
     height: 0;
     overflow: hidden;
     transition: height 0.5s;
+    background-image: url(images/drop-menu.png);
   }
   .container-drop.open{
     /* padding: 10px; */
@@ -183,19 +186,55 @@ span{
 
 
 
-  /* ------------------------------ */
-.container{
-    padding: 10px;
-    height: 100vh;
+  /* -----------Hero----------- */
+.container-hero{
+    height: 87vh;
+    max-width: 100%;
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
 }
 
+
+/* --------------About------------- */
+
+.container-about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    /* background-color: #fff;
+    border: 3px solid var(--primary);
+    border-bottom: 5px solid var(--primary);
+    border-right: 5px solid var(--primary);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 6, 0.2);
+    border-radius: 1rem; */
+}
+.about-text{
+    max-width: 350px;
+    padding: 1rem 0;
+}
+.about-text p{
+    font-size: 1rem;
+    text-align: justify;
+}
+.about-image img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem;
+}
+
 /* ----------Footer---------- */
 footer{
     /* background-color: #051342; */
-    background-image: url(images/background-1.png);
+    background-image: url(images/banner.png);
 }
 .container-foot{
     display: flex;
