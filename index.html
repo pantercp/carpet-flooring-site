@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/c0e039a635.js" crossorigin="anonymous"></script>
 </head>
 
@@ -54,6 +55,7 @@
 
     <div class="container-hero">
     </div>
+
     <div class="container-about">
         <div class="about-text">
             <h2>About</h2>
@@ -67,6 +69,24 @@
             <img src="images/floor-1.jpg" alt="">
         </div>
     </div>
+
+    <section aria-label="Newest Testimonials">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="images/floor-1.jpg" alt="Testimonial Image #1">
+                </li>
+                <li class="slide">
+                    <img src="images/floor-2.jpg" alt="Testimonial Image #2">
+                </li>
+                <li class="slide">
+                    <img src="images/floor-3.jpg" alt="Testimonial Image #3">
+                </li>
+            </ul>
+        </div>
+    </section>
 
 
     <footer>
@@ -111,7 +131,6 @@
     </footer>
 
 
-    <script src="app.js"></script>
 
 
 </body>
