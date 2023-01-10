@@ -233,28 +233,65 @@ span{
 
 /* --------------Carousel------------ */
 
-.carousel{
-    max-width: 100vw;
+section.testimonials{
     height: 100vh;
+    width: 100vw;
+}
+.carousel{
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    max-height: 400px;
     position: relative;
+}
+h2.testimonials{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary);
+}
+.slide{
+    position: absolute;
+    width: 90vw;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-bottom: 4px solid var(--primary);
+    border-right: 3px solid var(--primary);
+    border-radius: 1rem;
+    background-color: #fff;
+    inset: 0;
+    opacity: 0;
+    transition: 400ms opacity ease-in-out;
+    transition-delay: 400ms;
+}
+.slide-text{
+    max-width: 350px;
+}
+span{
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 10px;
+}
+span.quote{
+    font-style: italic;
+    display: block;
 }
 .carousel > ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.slide{
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 400ms opacity ease-in-out;
-    transition-delay: 400ms;
-}
-
 .slide > img{
     display: block;
-    width: 100%;
-    height: 100%;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 400px;
+    max-height: 50vh;
     object-fit: cover;
     object-position: center;
 }
@@ -290,6 +327,11 @@ span{
 }
 .carousel-button.next{
     right: 1rem;
+}
+
+/* -----------Contain----------- */
+.contain{
+    margin: 40px;
 }
 
 /* ----------Footer---------- */
@@ -341,7 +383,17 @@ footer{
 }
 
 
-
+@media only screen and (max-width: 700px){
+    .slide{
+        flex-wrap: wrap;
+    }
+    .carousel{
+        max-height: 90vh;
+    }
+    .slide > img{
+        max-height: 50%;
+    }
+}
 
 
 @media only screen and (max-width: 600px){
