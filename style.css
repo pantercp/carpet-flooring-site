@@ -270,6 +270,9 @@ h2.testimonials{
 }
 .slide-text{
     max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 span{
     text-align: center;
@@ -279,7 +282,16 @@ span{
 }
 span.quote{
     font-style: italic;
-    display: block;
+    margin-top: 40px;
+    /* display: block; */
+    position: relative;
+}
+span.quote::before{
+    content: open-quote open-quote;
+    font-size: 6rem;
+    position: absolute;
+    top: -50px;
+    left: 40%;
 }
 .carousel > ul{
     margin: 0;
@@ -289,6 +301,7 @@ span.quote{
 .slide > img{
     display: block;
     border-radius: 1rem;
+    margin: 0.5rem;
     width: 90%;
     max-width: 400px;
     max-height: 50vh;
